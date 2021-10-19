@@ -1,0 +1,13 @@
+[debug] [2021-10-19T15:29:45.378Z] ----------------------------------------------------------------------
+[debug] [2021-10-19T15:29:45.381Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DCL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-19T15:29:45.381Z] CLI Version:   9.20.0
+[debug] [2021-10-19T15:29:45.381Z] Platform:      win32
+[debug] [2021-10-19T15:29:45.381Z] Node Version:  v14.17.1
+[debug] [2021-10-19T15:29:45.390Z] Time:          Tue Oct 19 2021 21:29:45 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-19T15:29:45.390Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-19T15:29:45.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-19T15:29:45.456Z] > authorizing via signed-in user (rafiuzzaman15-9655@diu.edu.bd)
+[debug] [2021-10-19T15:29:45.456Z] [iam] checking project pro-denti for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-19T15:29:45.458Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pro-denti:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}

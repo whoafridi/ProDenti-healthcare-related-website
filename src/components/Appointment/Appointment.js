@@ -21,7 +21,7 @@ const Appointment = () => {
                 <Button variant="primary" type="submit">
                     Appointment
                 </Button>
-                <Link to='/service'>
+                <Link to='/services'>
                 <Button variant="warning" type="submit" className="ms-2">
                     Back to services
                 </Button>
