@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Detail = ({service}) => {
+const Details = ({service}) => {
     const {id, img, servicename, description} = service;
     return (
         <Col>
@@ -14,7 +14,7 @@ const Detail = ({service}) => {
               {description.slice(0,150)}
             </Card.Text>  
             <Link to={`/service/${id}`}>
-            <Button variant="warning">More about {servicename.toLowerCase()}<span><i className='bx bx-right-arrow-alt'></i></span></Button>
+            <Button variant="warning">More info {servicename.toLowerCase()}<span><i className='bx bx-right-arrow-alt'></i></span></Button>
             </Link>          
           </Card.Body>
         </Card>
@@ -22,4 +22,4 @@ const Detail = ({service}) => {
     )
 }
 
-export default Detail;
+export default Details;

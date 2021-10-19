@@ -1,25 +1,34 @@
-import React from 'react'
-import { Card, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router';
+import Servi from '../Servi/Servi';
 
-const Service = ({service}) => {
-    const {id, img, servicename, description} = service;
-    return (
-        <Col>
-        <Card>
-          <Card.Img variant="top" src={img} rounded/>
-          <Card.Body>
-            <Card.Title className="fw-bold">{servicename}</Card.Title>
-            <Card.Text>
-              {description.slice(0,150)}
-            </Card.Text>  
-            <Link to={`/servi/${id}`}>
-            <Button variant="warning">More info {servicename.toLowerCase()}<span><i className='bx bx-right-arrow-alt'></i></span></Button>
-            </Link>          
-          </Card.Body>
-        </Card>
-      </Col>
-    )
+const Service = () => {
+  const {id} = useParams()
+
+  const [service, setService] = useState([]);
+  const [single, setSingle] = useState([]);
+
+    useEffect(()=>{
+        fetch("https://raw.githubusercontent.com/whoafridi/Play-with-JavaScript/master/services.json")
+        .then(res => res.json())
+        .then(data => setService(data));
+    },[id])
+ 
+
+    useEffect(()=>{
+      const values = service.filter((s) => s.id == id)
+      setSingle(values)
+    },[service])
+
+  return (
+    <div className="container">
+    
+    {
+      single.map(s => <Servi key={s.id} s={s}></Servi>)
+    }
+       
+    </div>
+  )
 }
 
-export default Service;
+export default Service

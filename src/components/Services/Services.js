@@ -1,11 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router';
-import Service from '../Service/Service';
 import { useEffect, useState,  } from 'react'
 import {Row} from 'react-bootstrap';
+import Details from '../Details/Details';
 
 const Services = () => {
-    const {serviceid} = useParams()
 
     const [services, setServices] = useState([]);
     useEffect(()=>{
@@ -19,7 +17,7 @@ const Services = () => {
             <h2 className="mt-3 fw-bold text-center mb-3">Our All Services</h2>
             <Row xs={1} md={3} className="g-4">
                 {
-                services.map( service => <Service key={service.id} service={service}></Service>)
+                services.map( service => <Details key={service.id} service={service}></Details>)
                 }
             </Row>
         </div>
