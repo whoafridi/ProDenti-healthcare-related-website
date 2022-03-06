@@ -1,0 +1,12 @@
+.according-item{
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 14px;
+}
+.faq{
+    background-color: rgb(252, 250, 247);
+}
+.faq-text{
+    color: rgba(20, 20, 20, 0.822);
+}

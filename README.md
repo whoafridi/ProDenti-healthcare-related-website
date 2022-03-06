@@ -1,4 +1,4 @@
-## Assignment - 10 - ProDenti - a healthcare related website
+## ProDenti - a healthcare related website
 
 ## live site [link](https://pro-denti.web.app/)
 

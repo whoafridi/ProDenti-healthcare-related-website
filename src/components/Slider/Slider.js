@@ -1,45 +1,29 @@
-import { Carousel} from 'react-bootstrap';
+// import doctor from "../../images/dentist-clinic.svg";
+import doctor from "../../images/13053.jpg";
 
 const Slider = () => {
-    return (
-        <div className=" mt-5 mb-5">
-            <Carousel variant="dark">
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="http://revitalizingsmiles.com/wp-content/uploads/2018/01/Dental-care.jpg"
-      alt="Cavity protection"
-    />
-    <Carousel.Caption>
-      <h5>Children Dental Care</h5>
-      <p>Children Dental Care Regular dental visits are important for you. By the time children have most of there Baby teeth, they are ready to come with their parents for a dental visit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://elmums.com/wp-content/uploads/2020/01/What-Are-The-Benefits-Of-Dental-Care.jpg"
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-      <h5>Adult Dental Care</h5>
-      <p>Adult Dental Care . Oral-Health Assessment – including detection of gum disease or periodontitis. </p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://www.deansdentalcare.com/wp-content/uploads/2016/10/DeansDentalCareMens.jpg"
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-      <h5>Cosmetic Teeth Whitening</h5>
-      <p>About Teeth Whitening Tooth Whitening has enjoyed a tremendous increase in popularity over recent years</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+  return (
+    <div className="container mt-3 mb-5">
+      <div className="row d-flex align-items-center justify-content-center">
+        <div className="col-md-5 col-sm-12">
+          <h1 className="header h1 mt-10 fw-bold">Hi there,</h1>
+          <h2 className="header h1 fw-bold">Welcome to ProDenti</h2>
+          <p className="header">
+            We will provide a full scope of dental service in Bangladesh. Skilled professional of dental doctor. Please visit our website to know more and find our cool services.
+          </p>
+          <button
+            type="button"
+            className="btn btn-dark header-btn rounded-pill"
+          >
+            Know more
+          </button>
         </div>
-    )
-}
+        <div className="col-md-7 col-sm-12">
+          <img src={doctor} className="img-fluid" alt="doctor" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Slider;
